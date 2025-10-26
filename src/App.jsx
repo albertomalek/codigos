@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import cajaCerrada from './assets/caja-cerrada.jpg'
-import cajaAbierta from './assets//Sin título.png'
+import cajaAbierta from './assets/caja-abierta.png'
 import './App.css';
 
 
@@ -21,7 +21,6 @@ function App() {
   }
   
   const revisar = () => {
-    console.log(value)
     if(codigos.includes(value)){
       setCorrectos([...correctos, value])
     }else{
@@ -49,7 +48,7 @@ function App() {
     <div className='flex min-h-900 items-center'>
       <div className='flex flex-col justify-center'>
         <div className='flex flex-wrap'>
-          {codigos/* .slice(0,4) */.map(cod => (
+          {codigos.map(cod => (
             <div className='flex flex-col items-center gap-12 p-24 font-size-36 color-white'>
               <img src={correctos.includes(cod) ? cajaAbierta : cajaCerrada} alt="" className='img'/>
               {correctos.includes(cod) ? <p className='color-aqua'>{cod}</p> : (
@@ -58,26 +57,6 @@ function App() {
             </div>
           ))}
         </div>
-        {/* <div className='flex'>
-          {codigos.slice(4,8).map(cod => (
-            <div className='flex flex-col items-center gap-12 p-24'>
-              <img src={correctos.includes(cod) ? cajaAbierta : cajaCerrada} alt="" className='img'/>
-              {correctos.includes(cod) ? <p className='color-white'>{cod}</p> : (
-                <></>
-              )}
-            </div>
-          ))}
-        </div>
-        <div className='flex'> 
-          {codigos.slice(8,12).map(cod => (
-            <div className='flex flex-col items-center gap-12 p-24'>
-              <img src={correctos.includes(cod) ? cajaAbierta : cajaCerrada} alt="" className='img'/>
-              {correctos.includes(cod) ? <p className='color-white'>{cod}</p> : (
-                <></>
-              )}
-            </div>
-          ))}
-        </div> */}
       </div>
       <div className='flex flex-col py-48 px-36 items-center w-full gap-80'>
         <div className='flex flex-col gap-72 h-1-2'>
@@ -97,7 +76,6 @@ function App() {
           <p>Error! Código equivocado!</p>
           <p>Intenta nuevamente con otro número</p>
         </div>}
-        {/* <hr className='hr w-full'/> */}
         <div className='flex flex-col gap-24 h-1-2 w-full items-center font-size-24'>
           <p className='color-white text-center'>Intentos fallidos</p>
           <div className='container-fallidos'>
