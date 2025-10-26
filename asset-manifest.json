@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/codigos/static/css/main.667a29fa.css",
+    "main.js": "/codigos/static/js/main.64244e96.js",
+    "static/js/453.e820488b.chunk.js": "/codigos/static/js/453.e820488b.chunk.js",
+    "static/media/caja-cerrada.jpg": "/codigos/static/media/caja-cerrada.dd86bc75702bbb3843a0.jpg",
+    "static/media/caja-abierta.png": "/codigos/static/media/caja-abierta.2244988dd85dc64b87aa.png",
+    "index.html": "/codigos/index.html",
+    "main.667a29fa.css.map": "/codigos/static/css/main.667a29fa.css.map",
+    "main.64244e96.js.map": "/codigos/static/js/main.64244e96.js.map",
+    "453.e820488b.chunk.js.map": "/codigos/static/js/453.e820488b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.667a29fa.css",
+    "static/js/main.64244e96.js"
+  ]
+}
